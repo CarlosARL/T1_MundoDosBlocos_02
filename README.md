@@ -31,9 +31,8 @@ O predicado `can(move(Block, From, To), List)` verifica se um movimento é poss�
 - Se o bloco existe e suas dimensões.
 - Se as posições inicial e final são válidas.
 - Se a posição final está livre.
-- Se o movimento respeita as regras de estabilidade.
-
-Existem quatro versões do predicado `can`, cada uma lidando com um comprimento de bloco específico.
+- Se o movimento respeita as regras de estabilidade, garantindo que os blocos sejam suportados adequadamente.
+- Existem quatro versões do predicado `can`, cada uma lidando com um comprimento de bloco específico.
 
 ### Efeitos dos Movimentos (Predicados `adds` e `deletes`)
 - `adds(Move, List)`: Define as novas relações adicionadas após um movimento.
@@ -70,4 +69,19 @@ Para executar os scripts Prolog, você precisa ter um interpretador Prolog insta
 ## Uso
 Para executar um script Prolog, abra um terminal e use o seguinte comando:
 ```bash
-swipl -s Trabalho1_IA_01.pl
+swipl
+```
+## Executando Exemplos
+Para visualizar exemplos de execução e testar os estados e movimentos definidos:
+
+Inicie o interpretador SWI-Prolog com o comando:
+```bash
+swipl
+```
+Carregue os predicados e execute a função to_plan/1:
+```bash
+?- consult("Trabalho1_IA_01").
+?- consult("Trabalho1_IA_02").
+?- to_plan(X)
+```
+Isso retornará a lista X contendo a sequência de ações para transformar o estado inicial no estado final desejado.
