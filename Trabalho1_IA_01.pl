@@ -75,7 +75,7 @@ can(move(Block,at(Xf, Yf), at(Xt, Yt)),[on(Block, at(Xf, Yf))|L]):-
     addnew([clear(Xt, Yt), clear(XEnd, Yt)], L4, L).                   
 
 can(move(Block,at(Xf, Yf), at(Xt, Yt)),[on(Block, at(Xf, Yf))|L]):-
-    block(Block),           % Verificando se um bloco
+    block(Block),           
     lenght(Block, BlockLength),
     dif(BlockLength,1),
     dif(BlockLength,2),
@@ -103,12 +103,12 @@ can(move(Block,at(Xf, Yf), at(Xt, Yt)),[on(Block, at(Xf, Yf))|L]):-
     delete_all(L4, L0, L).
 
 can(move(Block,at(Xf, Yf), at(Xt, Yt)),[on(Block, at(Xf, Yf))|L]):-
-    block(Block),           % Verificando se � um bloco
+    block(Block),           
     lenght(Block, BlockLength),
     dif(BlockLength,1),
     dif(BlockLength,2),
     height(Block, BlockHeight),
-    place(Xf),                 %  Verificando os locais
+    place(Xf),                 
     place(Yf),
     place(Xt),
     place(Yt),
