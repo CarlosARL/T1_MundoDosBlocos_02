@@ -71,13 +71,6 @@ Para executar um script Prolog, abra um terminal e use o seguinte comando:
 ```bash
 swipl
 ```
-## Executando Exemplos
-Para visualizar exemplos de execução e testar os estados e movimentos definidos:
-
-Inicie o interpretador SWI-Prolog com o comando:
-```bash
-swipl
-```
 Carregue os predicados e execute a função to_plan/1:
 ```bash
 ?- consult("Trabalho1_IA_01").
